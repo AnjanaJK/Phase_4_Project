@@ -1,0 +1,15 @@
+span {
+    font-weight: 600;
+    color: black;
+}
+
+#header {
+    /* position: relative; */
+    /* margin-top: -px; */
+    margin-left: 79%;
+}
+
+#images {
+    position: relative;
+    margin-top: -55px;
+}

@@ -1,0 +1,16 @@
+{
+    "answerList": [
+        {
+            "answers": [
+                {
+                    "qno": 1,
+                    "guessImage": "./assets/images/Alakazam_guess.png"
+                },
+                {
+                    "qno": 2,
+                    "guessImage": "./assets/images/Alakazam_guess.png"
+                }
+            ]
+        }
+    ]
+}

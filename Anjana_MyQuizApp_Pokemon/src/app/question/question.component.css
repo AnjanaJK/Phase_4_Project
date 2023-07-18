@@ -1,0 +1,57 @@
+#infoTable {
+    width: 50%;
+    margin-left: 290px;
+    text-align: center;
+    font-weight: 500;
+    font-size: large;
+}
+
+/* table,
+tr,
+td {
+    border: 2px solid black;
+} */
+
+
+#optionsTable {
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+
+
+li .card:hover {
+    border: 1px solid blue;
+}
+
+
+/* #detailsTable,
+#detailsData {
+    border: 1px solid white
+} */
+
+/* OPTIONS */
+#detailsData {
+    /* text-align: center; */
+    width: 50%;
+}
+
+.card {
+    padding: 20px;
+    background-color: rgba(87, 67, 67, 0.438);
+    color: aliceblue;
+}
+
+#goalImg {
+    margin-left: 96%;
+    margin-top: -5%;
+}
+
+#btnSet {
+    color: aliceblue;
+}

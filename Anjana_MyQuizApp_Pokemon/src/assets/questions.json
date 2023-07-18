@@ -1,0 +1,255 @@
+{
+    "_comment1": "This file contains all questions and answers wrt the Quiz",
+    "questions": [
+        {
+            "qno": 1,
+            "questionText": "Who's that Pokémon?",
+            "guessImage": "./assets/images/Alakazam_guess.png",
+            "actualImage": "./assets/images/Alakazam.png",
+            "options": [
+                {
+                    "text": "Alakazam",
+                    "correct": true,
+                    "otherImage": "./assets/images/others/Alakazam.png"
+                },
+                {
+                    "text": "Feebas",
+                    "otherImage": "./assets/images/others/Feebas.png"
+                },
+                {
+                    "text": "Kadabra",
+                    "otherImage": "./assets/images/others/Kadabra.png"
+                },
+                {
+                    "text": "Absol",
+                    "otherImage": "./assets/images/others/Absol.png"
+                }
+            ]
+        },
+        {
+            "qno": 2,
+            "questionText": "Who's that Pokémon?",
+            "guessImage": "./assets/images/Bulbasaur_guess.png",
+            "actualImage": "./assets/images/Bulbasaur.png",
+            "options": [
+                {
+                    "text": "Ivysaur",
+                    "otherImage": "./assets/images/others/Ivysaur.png"
+                },
+                {
+                    "text": "Bulbasaur",
+                    "correct": true,
+                    "otherImage": "./assets/images/others/Bulbasaur.png"
+                },
+                {
+                    "text": "Sceptile",
+                    "otherImage": "./assets/images/others/Sceptile.png"
+                },
+                {
+                    "text": "Venusaur",
+                    "otherImage": "./assets/images/others/Venusaur.png"
+                }
+            ]
+        },
+        {
+            "qno": 3,
+            "questionText": "Who's that Pokémon?",
+            "guessImage": "./assets/images/Ekans_guess.png",
+            "actualImage": "./assets/images/Ekans.png",
+            "options": [
+                {
+                    "text": "Ekans",
+                    "correct": true,
+                    "otherImage": "./assets/images/others/Ekans.png"
+                },
+                {
+                    "text": "Arbok",
+                    "otherImage": "./assets/images/others/Arbok.png"
+                },
+                {
+                    "text": "Venonat",
+                    "otherImage": "./assets/images/others/Venonat.png"
+                },
+                {
+                    "text": "Gengar",
+                    "otherImage": "./assets/images/others/Gengar.png"
+                }
+            ]
+        },
+        {
+            "qno": 4,
+            "questionText": "Who's that Pokémon?",
+            "guessImage": "./assets/images/Geodude_guess.png",
+            "actualImage": "./assets/images/Geodude.png",
+            "options": [
+                {
+                    "text": "Boldore",
+                    "otherImage": "./assets/images/others/Boldore.png"
+                },
+                {
+                    "text": "Tyranitar",
+                    "otherImage": "./assets/images/others/Tyranitar.png"
+                },
+                {
+                    "text": "Onix",
+                    "otherImage": "./assets/images/others/Onix.png"
+                },
+                {
+                    "text": "Geodude",
+                    "correct": true,
+                    "otherImage": "./assets/images/others/Geodude.png"
+                }
+            ]
+        },
+        {
+            "qno": 5,
+            "questionText": "Who's that Pokémon?",
+            "guessImage": "./assets/images/Hitmonchan_guess.png",
+            "actualImage": "./assets/images/Hitmonchan.png",
+            "options": [
+                {
+                    "text": "Tyrogue",
+                    "otherImage": "./assets/images/others/Tyrogue.png"
+                },
+                {
+                    "text": "Hitmonchan",
+                    "correct": true,
+                    "otherImage": "./assets/images/others/Hitmonchan.png"
+                },
+                {
+                    "text": "Hitmonlee",
+                    "otherImage": "./assets/images/others/Hitmonlee.png"
+                },
+                {
+                    "text": "Hitmontop",
+                    "otherImage": "./assets/images/others/Hitmontop.png"
+                }
+            ]
+        },
+        {
+            "qno": 6,
+            "questionText": "Who's that Pokémon?",
+            "guessImage": "./assets/images/Metapod_guess.png",
+            "actualImage": "./assets/images/Metapod.png",
+            "options": [
+                {
+                    "text": "Silcoon",
+                    "otherImage": "./assets/images/others/Silcoon.png"
+                },
+                {
+                    "text": "Scatterbug",
+                    "otherImage": "./assets/images/others/Scatterbug.png"
+                },
+                {
+                    "text": "Metapod",
+                    "correct": true,
+                    "otherImage": "./assets/images/others/Metapod.png"
+                },
+                {
+                    "text": "Spidops",
+                    "otherImage": "./assets/images/others/Spidops.png"
+                }
+            ]
+        },
+        {
+            "qno": 7,
+            "questionText": "Who's that Pokémon?",
+            "guessImage": "./assets/images/Psyduck_guess.png",
+            "actualImage": "./assets/images/Psyduck.png",
+            "options": [
+                {
+                    "text": "Golduck",
+                    "otherImage": "./assets/images/others/Golduck.png"
+                },
+                {
+                    "text": "Quaxly",
+                    "otherImage": "./assets/images/others/Quaxly.png"
+                },
+                {
+                    "text": "Psyduck",
+                    "correct": true,
+                    "otherImage": "./assets/images/others/Psyduck.png"
+                },
+                {
+                    "text": "Whiscash",
+                    "otherImage": "./assets/images/others/Whiscash.png"
+                }
+            ]
+        },
+        {
+            "qno": 8,
+            "questionText": "Who's that Pokémon?",
+            "guessImage": "./assets/images/Raichu_guess.png",
+            "actualImage": "./assets/images/Raichu.png",
+            "options": [
+                {
+                    "text": "Elekid",
+                    "otherImage": "./assets/images/others/Elekid.png"
+                },
+                {
+                    "text": "Raikou",
+                    "otherImage": "./assets/images/others/Raikou.png"
+                },
+                {
+                    "text": "Raichu",
+                    "correct": true,
+                    "otherImage": "./assets/images/others/Raichu.png"
+                },
+                {
+                    "text": "Electrode",
+                    "otherImage": "./assets/images/others/Electrode.png"
+                }
+            ]
+        },
+        {
+            "qno": 9,
+            "questionText": "Who's that Pokémon?",
+            "guessImage": "./assets/images/Vulpix_guess.png",
+            "actualImage": "./assets/images/Vulpix.png",
+            "options": [
+                {
+                    "text": "Vulpix",
+                    "correct": true,
+                    "otherImage": "./assets/images/others/Vulpix.png"
+                },
+                {
+                    "text": "Fennekin",
+                    "otherImage": "./assets/images/others/Fennekin.png"
+                },
+                {
+                    "text": "Heatmor",
+                    "otherImage": "./assets/images/others/Heatmor.png"
+                },
+                {
+                    "text": "Fuecoco",
+                    "otherImage": "./assets/images/others/Fuecoco.png"
+                }
+            ]
+        },
+        {
+            "qno": 10,
+            "questionText": "Who's that Pokémon?",
+            "guessImage": "./assets/images/Weepinbell_guess.png",
+            "actualImage": "./assets/images/Weepinbell.png",
+            "options": [
+                {
+                    "text": "Victreebel",
+                    "otherImage": "./assets/images/others/Victreebel.png"
+                },
+                {
+                    "text": "Weepinbell",
+                    "correct": true,
+                    "otherImage": "./assets/images/others/Weepinbell.png"
+                },
+                {
+                    "text": "Gloom",
+                    "otherImage": "./assets/images/others/Gloom.png"
+                },
+                {
+                    "text": "Foongus",
+                    "otherImage": "./assets/images/others/Foongus.png"
+                }
+            ]
+        }
+    ]
+}

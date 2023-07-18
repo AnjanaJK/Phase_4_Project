@@ -1,0 +1,27 @@
+<div id="bigScreen">
+    <br>
+    <div class="card bg-dark py-4" id="welcomeBox">
+        <h2>Welcome fellow Pokémon Trainer!</h2>
+        <p>
+            It's time to put your Pokémon knowledge to the test. But before starting,<br>
+            here are some rules.        
+        </p>
+        <ul type="square">
+            <li>Total no. of questions: 10</li>
+            <li>You will be given 60 seconds timer per question</li>
+            <li>You will have to guess the Pokémon</li>
+            <li>Correct Answer: +10 points</li>
+            <li>Incorrect Answer: -10 points</li>
+            <li>Refereshing the page will reset the Quiz</li>
+        </ul>
+    
+        <label for="">What should we call you?</label>
+        <input #name type="text" name="name" placeholder="Name" style="width: 50%;"><br>
+    
+        <h4>Are you ready?....Let's go catch 'em all !</h4>
+        <button class="btn btn-success" style="width: 30%;" routerLink="/question" (click)="beginQuiz()">
+            Start Quiz
+        </button>
+    </div>
+    <br><br>
+</div>

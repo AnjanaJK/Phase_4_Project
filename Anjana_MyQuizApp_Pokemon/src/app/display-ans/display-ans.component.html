@@ -1,0 +1,88 @@
+<div id="bigScreenDisplay">
+
+    
+    <div style="text-align: center;">
+        <br>
+        <h3>{{name}}, This is the list of all the questions with the answers</h3>
+
+    </div>
+
+    <div class="container bg-dark" id="screenDisplay">
+        <br>
+        <!-- Options -->
+        <div class="options">
+           
+            <table  style="color: aliceblue;">
+                <tr *ngFor="let question of questionList">
+
+                    <td id="imgTable">
+                        <h4>Question {{ question.qno }}</h4>
+                        <img [src]="question.guessImage" alt="Guess Image" width="120%">
+                    </td>
+                    
+                    
+                    <td style="border: 1px solid white; text-align: center;">
+                        <span *ngFor="let option of question.options" style="border: 1px solid rgba(255, 255, 255, 0.169);" [ngClass]="{'correct-option': option.correct}">
+
+                            <img [src]="option.otherImage" alt="{{ option.text }}" width="29%">
+                            <span>{{ option.text }}&nbsp;</span>
+
+                        </span>
+                    </td>
+                    
+                </tr>
+            </table>    
+        </div> 
+    </div>
+    <!-- End of screen -->
+
+    
+    <!-- Design-2 -->
+        <img src="https://www.freepnglogos.com/uploads/dot-png/file-location-dot-red-svg-wikipedia-0.png" width="25" style="margin-left: 19%; margin-bottom: 10px; margin-top: 1%;">
+        
+        <div style="position:relative; width: 50px; margin-left: 75%;">
+            <hr style="margin-top: -30px;"><hr><hr>
+        </div>
+        <br>
+    <!-- End of Design-2 -->
+
+
+</div>
+
+
+
+
+ 
+<!-- 
+    <ul id="optionsTable" *ngFor="let option of questionList[currentQuesNum]?.options">
+        <li>
+            <div class="card">
+                <img [src]="option.otherImage" width="50%"> - {{option.text}}
+            </div>
+        </li>
+    </ul>
+
+    <table id="optionsTable" style="color:aliceblue">
+        <tr *ngFor="let question of questionList">
+            <td style="border: 1px solid gray;" >
+                <h4>Q {{ question.qno }}</h4>
+
+                <img [src]="question.guessImage" width="20%">
+
+                
+                <span *ngFor="let option of question.options">
+                    <img [src]="option.otherImage" width="20%">
+                </span>
+                
+            </td>
+
+            <td style="border: 1px solid gray;" *ngFor="let option of questionList[currentQuesNum]?.options">
+                <div class="">
+                    <img [src]="option.otherImage" width="60%"> - {{option.text}}
+                </div>
+            </td>
+
+        </tr>
+    </table> 
+-->
+

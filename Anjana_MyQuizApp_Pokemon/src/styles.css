@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+#bigScreen {
+    background-color: antiquewhite;
+    /* height: 100%; */
+    height: auto;
+
+}
+
+#screen {
+    background-color: black;
+    height: 550px;
+    width: 850px;
+    color: aliceblue;
+}
+
+#resScreen {
+    background-color: black;
+    margin-top: 10px;
+    margin-left: 110px;
+    width: 80%;
+    color: aliceblue;
+}
+
+
+#resTable,
+#resCols {
+    border: 1px solid rgba(128, 128, 128, 0.315);
+}
+
+#resTable {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+#bigScreenDisplay {
+    background-color: antiquewhite;
+}
+
+#screenDisplay {}

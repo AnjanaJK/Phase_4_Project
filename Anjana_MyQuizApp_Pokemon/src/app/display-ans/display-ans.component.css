@@ -1,0 +1,37 @@
+/* OPTIONS */
+#detailsData {
+    /* text-align: center; */
+    width: 50%;
+}
+
+.card {
+    padding: 20px;
+    background-color: rgba(87, 67, 67, 0.438);
+    color: aliceblue;
+}
+
+#optionsTable {
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+
+
+li .card:hover {
+    border: 1px solid blue;
+}
+
+#imgTable {
+    padding: 40px;
+}
+
+.correct-option {
+    background-color: rgba(15, 181, 15, 0.708);
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

@@ -1,0 +1,202 @@
+<div id="bigScreen">
+    <br>
+    
+    
+    <!-- QUIZ COMPLETED : FALSE -->
+    <ng-container *ngIf="!isQuizCompleted">
+
+        <div style="text-align: center;">
+
+            <h3>Player: {{name}}</h3>
+    
+        </div>
+
+        <div class="py-2">
+            <br>
+            <table id="infoTable">
+                <tr>
+                    <td>
+                        <span>{{points}} points</span>
+                    </td>
+                    <td>
+                        <img src="https://www.freepnglogos.com/uploads/dot-png/file-location-dot-red-svg-wikipedia-0.png" width="25">
+                    </td>
+                    <td>
+                        <span>Question {{currentQuesNum + 1}} of 10</span>
+                    </td>
+                    <td>
+                        <img src="https://www.freepnglogos.com/uploads/dot-png/file-location-dot-red-svg-wikipedia-0.png" width="25">
+                    </td>
+                    <td><span>{{timer}} sec</span></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="container bg-dark" id="screen">
+            <br>
+
+            <!-- Progress-bar -->
+            <div class="progress" style="width: 96%;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                     role="progressbar" 
+                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" 
+                     [ngStyle]="{'width': progress + '%'}">
+                </div>
+            </div>
+    
+            <img src="./assets/goal.png" width="5%" id="goalImg"><br>
+    
+    
+            <!-- Question -->
+            <div class="card">
+                Q{{currentQuesNum+1}}] {{questionList[currentQuesNum]?.questionText}}
+            </div>
+    
+    
+            <table id="detailsTable">
+                <tr>
+                    <!-- Image -->
+                    <td id="detailsData">
+                        <img src={{questionList[currentQuesNum]?.guessImage}} width="80%">
+                    </td>
+    
+                    <!-- Options -->
+                    <td id="detailsData">
+                        <br>
+                        
+                        <div class="options">
+                            <ul id="optionsTable" *ngFor="let option of questionList[currentQuesNum]?.options">
+                                <li (click)="answer(currentQuesNum + 1, option)">
+                                    <div class="card" appChangeBg [isCorrect]="option.correct">
+                                        {{option.text}}
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </td>
+                </tr>
+            </table>
+            
+            <!-- BUTTONS -->
+            <div class="d-flex justify-content-between" >
+                <!-- Prev -->
+                <button class="btn" (click)="goToPrev()" [disabled]="currentQuesNum===0">
+                    <i class="fa-regular fa-circle-chevron-left fa-3x" id="btnSet"></i>
+                </button>
+    
+                <!-- Reload -->
+                <button class="btn" (click)="resetQuiz()">
+                    <i class="fa-regular fa-arrows-rotate fa-3x" id="btnSet"></i>
+                </button>
+    
+                <!-- Next -->
+                <button class="btn" (click)="goToNext()"  [disabled]="currentQuesNum+1===questionList.length">
+                    <i class="fa-regular fa-circle-chevron-right fa-3x" id="btnSet"></i>
+                </button>
+            </div>
+            <!-- End of Buttons -->
+            
+        </div>
+        <!-- End of screen -->
+    
+        
+        <!-- Design-2 -->
+        <br>
+        <img src="https://www.freepnglogos.com/uploads/dot-png/file-location-dot-red-svg-wikipedia-0.png" width="25" style="margin-left: 19%; margin-bottom: 10px; margin-top: 1%;">
+        
+        <div style="position:relative; width: 50px; margin-left: 75%;">
+            <hr style="margin-top: -30px;"><hr><hr>
+        </div>
+        <br>
+        <!-- End of Design-2 -->
+
+    </ng-container>
+
+
+    <!-- Display after the last question -->
+    <ng-container *ngIf="isQuizCompleted">
+        <div class="card bg-dark mt-5" id="resScreen" style="padding-top: 20px;">
+           <div class="row">
+
+            <div class="col">
+                <img src="./assets/yay1.gif" width="100%" style="margin-top: 25px;">
+            </div>
+               
+            <div class="col">
+                <div class=" text-center">
+                    <h3>
+                        <span class="text-warning">
+                            Congratulations {{name}}!!
+                        </span>
+                        <br> You have completed the quiz. 
+                        <br>Below is your result:
+                    </h3>
+                </div>
+                
+                <br>
+                <table id="resTable">
+                    <tr id="resCols" >
+                        <th>Total Question Attempted</th>
+                        <td id="resCols" style="text-align: right;">{{questionList.length}}</td>
+                    </tr>
+                    <tr id="resCols" >
+                        <th>Total Correct Answered</th>
+                        <td id="resCols" style="text-align: right;">{{correctAns}}</td>
+                    </tr>
+                    <tr id="resCols" >
+                        <th>Total Wrong Answered</th>
+                        <td id="resCols" style="text-align: right;">{{wrongAns}}</td>
+                    </tr>
+                    <tr id="resCols" >
+                        <th>Your Score</th>
+                        <td id="resCols" style="text-align: right;">{{points}} Points</td>
+                    </tr>
+                </table>
+
+                <br>
+                <div class="text-center">
+                    <button class="btn btn-success" routerLink="/displayAns">Review and Display Results</button>
+                </div>
+                
+            </div>
+
+           </div>
+        </div><br><br><br><br><br>
+        
+    </ng-container>
+
+     
+    
+</div>
+
+
+<!-- End of Big-Screen  -->
+
+ 
+
+
+  <!-- <table id="optionsTable">
+                <tr>
+                    <td>
+                        <div class="card">
+                            option
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card">
+                            option
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card">
+                            option
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card">
+                            option
+                        </div>
+                    </td>
+                </tr>
+            </table> -->
